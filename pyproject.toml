@@ -1,0 +1,15 @@
+[build-system]
+requires = ["flit_core >=2,<4"]
+build-backend = "flit_core.buildapi"
+
+[tool.flit.metadata]
+module = "robo_ai"
+author = "ROBO.AI"
+author-email = "info@robo-ai.com"
+requires = [
+    "requests >=2.23.0",
+    "cattrs >=1.0.0",
+    "attrs >=19.3.0",
+    "requests-toolbelt >=0.9.1",
+    "configparser; python_version >= '3.6'",
+]
