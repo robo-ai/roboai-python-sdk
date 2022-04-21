@@ -13,8 +13,8 @@ setup(
     download_url='',
     py_modules=['robo_ai'],
     packages=setuptools.find_packages(),
-    setup_requires=['attrs', 'cattrs', 'requests'],
-    install_requires=['attrs', 'cattrs', 'requests'],
+    setup_requires=['attrs', 'cattrs', 'requests','pyyaml','pydantic'],
+    install_requires=['attrs', 'cattrs', 'requests','pyyaml','pydantic'],
     python_requires=">=3.6",
     classifiers=[
         "Programming Language :: Python :: 3",
