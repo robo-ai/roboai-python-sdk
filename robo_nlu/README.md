@@ -32,7 +32,7 @@ after this, you can get a model object that will allow to reach the several API 
 model = client.model()
 ```
 
-The instantiation above implies that you want to create a new nlu model intance. If a model instance already exists and you need to access it, you simply pass the model UUID, as an argument to the previous method:
+The instantiation above implies that you want to create a new nlu model instance. If a model instance already exists and you need to access it, you simply pass the model UUID, as an argument to the previous method:
 
 ```python
 model=client.model('ad6602c0-96e1-4eb6-a953-196ed7cb10e7')
@@ -46,7 +46,11 @@ The model object will then have all the methods needed to access the API, in a o
 * predict
 * delete
 
-Additionally the model object has a property *get_model*, which allow to retrieve and/or confirm the current model UUID.
+Additionally the model object has a property *get_model*, which allow to retrieve and/or confirm the current model UUID. All of this methods are documented by docstrings, which offer aid by calling the native help info on the method, e.g.:
+
+```python
+model.create?
+``` 
 
 ### Workflow example of endpoints usage:
 
@@ -56,12 +60,12 @@ Once a model object is available, if a no uuid was provided, you can create a mo
 model.create(language='en)
 ``` 
 
-and then train, evaluate and deploy a model by:
+and then train and deploy a model by:
 
 ```python
 model.train(json_data)
 ``` 
-where json_data is a dictionary formated as the example below:
+where json_data is a dictionary formatted as the example below:
 
 ```json
 {
@@ -77,11 +81,16 @@ where json_data is a dictionary formated as the example below:
 
 or a string reference to a yaml filepath in nlu.yaml Rasa3 format.
 
-The ```model_eval``` parameter must be set to ```True``` if it is desired to evaluate the model (default is set to ```model_eval=False```).
-
-The parameters ```max_allowed_error_number``` and ```min_word_length``` are regarding the NER capability of the NLU... **#TO DO**
+> **NOTE:** The train method also permits to change optional endpoint parameters, allowing for model evaluation, or to change the Entity Recognition fuzzy matching parameters. The optional arguments and respective defaults are:
+>
+>    - model_eval: bool = False
+>    - max_allowed_error_number: int = 3;
+>    - min_word_length: int = 3.
+>
+>For more info please read the API swagger documentation, or access the method's docstring.
 
 To confirm the model is ready and in serving condition, you can access the status endpoint by:
+
 
 ```python
 model.status()
@@ -99,4 +108,4 @@ If something goes terribly wrong, you can delete a model instance within the API
 model.delete()
 ```
 
-In all of the above methods they return a enriched object based on pydantic's BaseModel, which allows for ease of parsing the returned data.
+> **NOTE:** In all of the above methods they return a enriched object based on pydantic's BaseModel, which allows for ease of parsing the returned data. [Here](https://pydantic-docs.helpmanual.io/usage/models/#model-properties) you can find more information on pydantic models. 
