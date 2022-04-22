@@ -1,2 +1,0 @@
-class UnprocessableEntityError(Exception):
-    pass 

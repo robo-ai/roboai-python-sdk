@@ -1,2 +1,0 @@
-class NotAcceptableError(Exception):
-    pass 

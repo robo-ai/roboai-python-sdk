@@ -1,6 +1,6 @@
 import setuptools
 from setuptools import setup
-from robo_ai import __version__
+from robo_sdk import __version__
 
 
 setup(
@@ -11,7 +11,7 @@ setup(
     author_email='info@robo-ai.com',
     url='https://robo-ai.com/',
     download_url='',
-    py_modules=['robo_ai'],
+    py_modules=['robo_ai','robo_nlu'],
     packages=setuptools.find_packages(),
     setup_requires=['attrs', 'cattrs', 'requests','pyyaml','pydantic'],
     install_requires=['attrs', 'cattrs', 'requests','pyyaml','pydantic'],
