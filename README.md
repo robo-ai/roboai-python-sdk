@@ -15,6 +15,6 @@ pip install robo-ai
 
 ## Using this package
 
-To use the Robo.AI SDK, please refer to this [tutorial](./robo_ai/README.md).
+To use the Robo.AI SDK, please refer to this [tutorial](https://github.com/robo-ai/roboai-python-sdk/tree/robo_nlu/robo_sdk/robo_ai).
 
-To use the Robo.NLU SDK, please read this [tutorial](./robo_nlu/README.md) instead.
+To use the Robo.NLU SDK, please read this [tutorial](https://github.com/robo-ai/roboai-python-sdk/tree/robo_nlu/robo_sdk/robo_nlu) instead.
