@@ -2,19 +2,12 @@
 
 A Python library for the ROBO.AI API which allows you to manage assistants' runtimes.
 
-## Installation
-
-The latest stable version is available on PyPI. You can install it with pip: 
-
-    pip install robo-ai
-
 ## Usage
 
 Initializing a new RoboAI instance:  
 
 ```python
-from robo_ai.model.config import Config
-from robo_ai.robo_ai import RoboAi
+from robo_sdk import RoboAi, Config
 
 base_endpoint = "<BACKEND_URL>"
 http_username = "<BASIC_AUTH_USERNAME>"

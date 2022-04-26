@@ -2,22 +2,13 @@
 
 This package offers a bundle of classes and methods that allow to interact easily with a running NLU Service API.
 
-## How to use this package:
-
-### Installing:
-
-There is a PIP package of this SDK, and to install it, simply run:
-
-```cli
-pip install robo-ai
-```
 
 ### Basic Usage:
 
 To access the SDK code you must first import the package by adding the following line of code:
 
 ```python
-from robo_nlu.robo_nlu import  RoboNLU 
+from robo_sdk import RoboNLU 
 ```
 
 You need first to instantiate and configure an object that holds the url to the base endpoint odf the API that will serve this SDK, and also the username and password to authenticate and grant access to it:
@@ -109,3 +100,5 @@ model.delete()
 ```
 
 > **NOTE:** In all of the above methods they return a enriched object based on pydantic's BaseModel, which allows for ease of parsing the returned data. [Here](https://pydantic-docs.helpmanual.io/usage/models/#model-properties) you can find more information on pydantic models. 
+
+For more examples, please check the [example notebook](usage_example/NLU_SDK_usage_example.ipynb).
