@@ -5,7 +5,7 @@ from robo_sdk.robo_nlu.model.config import Config
 
 class RoboNLU:
     """
-    Entry point class for NLU SDK. Allow to configure  
+    Entry point class for NLU SDK. Allows to configure the NLU Service client on intialization.
     """
     __config=None
 
@@ -19,7 +19,12 @@ class RoboNLU:
               
     def model(self, model_uuid: str = None):
         """
-        bla bla bla
+        Instantiates a local model instance. If no uuid is passed as argument, the instance is void and ready to 
+        create a nem model instance within configured the NLU Service API.
+                   
+        arguments: - model_uuid: str, existing model_uuid string. To be used when access to existing model is required.
+
+        returns:   - a NLUResources() instantiated object.
         """
         if model_uuid:
             return NLUResources(config = self.__config, model_uuid=model_uuid)

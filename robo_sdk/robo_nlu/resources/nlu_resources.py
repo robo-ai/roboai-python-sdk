@@ -113,7 +113,7 @@ class NLUResources(NLUClient):
     
     def metrics(self):
         """
-        Method to retrieve the status of model object within the NLU API service. 
+        Method to retrieve the model's evaluation resulting metrics of model object within the NLU API service. 
         
         arguments: No arguments are required.
 
