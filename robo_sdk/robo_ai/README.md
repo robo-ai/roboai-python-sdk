@@ -1,4 +1,4 @@
-# ROBO.AI SDK for Python
+# ROBO.AI - Bot Assistants Manager Python SDK
 
 A Python library for the ROBO.AI API which allows you to manage assistants' runtimes.
 

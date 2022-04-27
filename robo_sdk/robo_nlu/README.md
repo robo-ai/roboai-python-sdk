@@ -1,7 +1,6 @@
-# NLU Service - Python SDK
+# Robo.AI - NLU Service Python SDK
 
 This package offers a bundle of classes and methods that allow to interact easily with a running NLU Service API.
-
 
 ### Basic Usage:
 
