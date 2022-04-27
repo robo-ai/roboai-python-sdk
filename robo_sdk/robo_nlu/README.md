@@ -100,4 +100,4 @@ model.delete()
 
 > **NOTE:** In all of the above methods they return a enriched object based on pydantic's BaseModel, which allows for ease of parsing the returned data. [Here](https://pydantic-docs.helpmanual.io/usage/models/#model-properties) you can find more information on pydantic models. 
 
-For more examples, please check the [example notebook](https://github.com/robo-ai/roboai-python-sdk/blob/robo_nlu/usage_example/NLU_SDK_usage_example.ipynb).
+For more examples, please check the [example notebook](https://github.com/robo-ai/roboai-python-sdk/tree/robo_nlu/robo_sdk/robo_nlu/docs/usage_example/NLU_SDK_usage_example.ipynb).
