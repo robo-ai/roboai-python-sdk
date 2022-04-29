@@ -56,4 +56,4 @@ class NLUClient:
             raise UnprocessableEntityError(response.json()["detail"])
         
         else:
-            raise Exception 
+            raise Exception(response.reason)

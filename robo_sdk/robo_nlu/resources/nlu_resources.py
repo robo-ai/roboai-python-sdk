@@ -120,7 +120,7 @@ class NLUResources(NLUClient):
         returns:   - MetricsResponse() object (based upon a pydantic BaseModel).
         """
         metrics_url = f"/metrics/{self.__model_uuid}"
-        response =  self.execute_request(method=RequestMethod.GET, url=metrics_url)
+        response =  self._execute_request(method=RequestMethod.GET, url=metrics_url)
         return MetricsResponse(**response.json())
 
     def predict(self, json_data:dict):
