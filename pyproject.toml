@@ -4,7 +4,7 @@ build-backend = "flit_core.buildapi"
 
 [project]
 name = "robo_sdk"
-authors = [{name = "ROBO.AI", email = "info@robo-ai.com"}]
+authors = [{name = "ROBO-AI", email = "info@robo-ai.com"}]
 readme = "README.md"
 license = {file = "LICENSE"}
 classifiers = ["License :: OSI Approved :: MIT License"]

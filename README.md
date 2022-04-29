@@ -1,4 +1,8 @@
-### General README file for Robo.AI and ROBO.NLU SDKs.
+### General README file for Robo-AI and ROBO-NLU SDKs.
+
+## Requirements:
+
+You need to run this package under (at least) python 3.6.
 
 ## Installing this package:
 
@@ -15,6 +19,6 @@ pip install robo-ai
 
 ## Using this package
 
-To use the Robo.AI SDK, please refer to this [tutorial](https://github.com/robo-ai/roboai-python-sdk/tree/robo_nlu/robo_sdk/robo_ai).
+To use the Robo-AI SDK, please refer to this [tutorial](https://github.com/robo-ai/roboai-python-sdk/tree/robo_nlu/robo_sdk/robo_ai).
 
-To use the Robo.NLU SDK, please read this [tutorial](https://github.com/robo-ai/roboai-python-sdk/tree/robo_nlu/robo_sdk/robo_nlu) instead.
+To use the Robo-NLU SDK, please read this [tutorial](https://github.com/robo-ai/roboai-python-sdk/tree/robo_nlu/robo_sdk/robo_nlu) instead.

@@ -8,7 +8,7 @@ from robo_sdk.robo_ai.resources.oauth import OauthResource
 class RoboAi:
     """
     Class used to represent a RoboAi client.
-    It allows ROBO.AI resources to be managed.
+    It allows ROBO-AI resources to be managed.
 
     Args:
         config (Config): a config object with the URL to the server, username and password.

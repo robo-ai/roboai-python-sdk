@@ -1,7 +1,7 @@
-"""An SDK for ROBO.NLU"""
+"""An SDK for ROBO-NLU"""
 
 
 
-__version__ = '0.1.1'
+__version__ = '1.3.2'
 
 __all__=['RoboNLU']

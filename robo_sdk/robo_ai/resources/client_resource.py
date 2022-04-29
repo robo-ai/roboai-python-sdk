@@ -23,7 +23,7 @@ class RequestMethod(Enum):
 
 class ClientResource:
     """
-    A client for communicating with the ROBO.AI server.
+    A client for communicating with the ROBO-AI server.
 
     Args:
         config (Config): a config object with the URL to the server, username and password.

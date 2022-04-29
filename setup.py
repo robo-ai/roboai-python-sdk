@@ -5,9 +5,9 @@ from robo_sdk import __version__
 
 setup(
     name='robo-python-sdk',
-    description='ROBO.AI SDK',
+    description='ROBO-AI SDK',
     version=__version__,
-    author='ROBO.AI',
+    author='ROBO-AI',
     author_email='info@robo-ai.com',
     url='https://robo-ai.com/',
     download_url='',
