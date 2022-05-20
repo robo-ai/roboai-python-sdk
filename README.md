@@ -13,7 +13,7 @@ pip install robo-ai
 ```
 >Note: while in develop and pypi package not uploaded and available remotely to pip install, please clone the repository and then locally, inside the main folder, run:
 >```cli
->pip install .
+>pip install . -r requirements.txt
 >```
 >All remaining instructions should then work as intended.
 

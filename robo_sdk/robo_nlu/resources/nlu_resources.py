@@ -123,17 +123,16 @@ class NLUResources(NLUClient):
         response =  self._execute_request(method=RequestMethod.GET, url=metrics_url)
         return MetricsResponse(**response.json())
 
-    def predict(self, json_data:dict):
+    def predict(self, text: str) -> PredictResponse:
         """
         Method to, given a text, retrieve the prediction of model object within the NLU API service.
         
-        arguments: - json_data: dict, a dictionary holding a text string as value identified by the "text" key. 
-                     data example {"text":"Hello and goodbye"}
+        arguments: - text: str,  a text string holding the message to be processed by the NLU model.
 
         returns:   - PredictResponse() object (based upon a pydantic BaseModel).
         """
         predict_url = f"/predict/{self.__model_uuid}"
-        response =  self._execute_request(method=RequestMethod.POST, url=predict_url, json_data=json_data)
+        response =  self._execute_request(method=RequestMethod.POST, url=predict_url, json_data={'text': text})
         return PredictResponse(**response.json())
 
     def delete(self):

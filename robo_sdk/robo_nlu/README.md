@@ -89,7 +89,7 @@ model.status()
 to which, upon receiving a READY status, the predict method allows to call upon the model for intent and entities predictions:
 
 ```python
-model.predict({"text": "Hello world!"})
+model.predict(text="Hello world!")
 ```
 
 If something goes terribly wrong, you can delete a model instance within the API by calling the delete method:

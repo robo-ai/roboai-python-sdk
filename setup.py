@@ -13,9 +13,9 @@ setup(
     download_url='',
     py_modules=['robo_ai','robo_nlu'],
     packages=setuptools.find_packages(),
-    setup_requires=['attrs', 'cattrs', 'requests','pyyaml','pydantic'],
-    install_requires=['attrs', 'cattrs', 'requests','pyyaml','pydantic'],
-    python_requires=">=3.6",
+    setup_requires=['attrs', 'cattrs', 'requests','requests-toolbelt','pyyaml','pydantic'],
+    install_requires=['attrs', 'cattrs', 'requests','requests-toolbelt','pyyaml','pydantic'],
+    python_requires=">=3.8",
     classifiers=[
         "Programming Language :: Python :: 3",
         "Operating System :: OS Independent",
